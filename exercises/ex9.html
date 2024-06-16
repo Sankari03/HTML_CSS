@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50px;
+      }
+      .main {
+        width: 300px;
+        height: 100px;
+        border: 1px solid grey;
+      }
+      .def,
+      .btns {
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .youtube {
+        height: 100px;
+        width: 350px;
+        background-color: rgb(44, 42, 42);
+        color: white;
+        margin-top: 20px;
+      }
+      .heading1 {
+        font-family: Arial;
+        font-size: larger;
+        font-weight: 700;
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+      .desc {
+        font-family: Arial;
+        padding-left: 20px;
+        font-size: 14px;
+        margin-top: 15px;
+      }
+      .twitter {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+        padding: 12px;
+        width: 500px;
+        border-radius: 6px;
+      }
+      .twitter-profile {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      .twitter-text {
+        font-size: 18px;
+        border: none;
+        width: 300px;
+        vertical-align: middle;
+      }
+      .twitter-button {
+        border: none;
+        background-color: rgb(29, 155, 240);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 50px;
+        padding: 8px 16px;
+        border-radius: 25px;
+        vertical-align: middle;
+      }
+      .friend {
+        width: 150px;
+        height: 225px;
+        margin-top: 50px;
+        display: inline-block;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        margin-right: 15px;
+      }
+      .content {
+        padding: 10px;
+      }
+      .image {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .name {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .mutual {
+        font-size: 12px;
+        font-family: Arial;
+        color: grey;
+        margin-top: 3px;
+      }
+      .frnd-button {
+        border: none;
+        padding: 7px 15px;
+        background-color: rgba(14, 62, 219, 0.801);
+        color: white;
+        font-family: Arial;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <br /><br />
+    <div class="circle"></div>
+    <br />
+    <br />
+    <div class="main">
+      <div class="def">Satisfied with out service?</div>
+      <div class="btns">
+        <button>Yes</button>
+        <button>No</button>
+      </div>
+    </div>
+
+    <div class="youtube">
+      <p class="heading1">Install Youtube Music</p>
+      <p class="desc">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+
+    <div class="twitter">
+      <img src="cat.jpg" alt="Cat Image" class="twitter-profile" />
+      <input class="twitter-text" placeholder="What's happening?" />
+      <button class="twitter-button">Tweet</button>
+    </div>
+    <br />
+    <br />
+    <div class="friend">
+      <div class="content">
+        <div class="friend-image">
+          <img src="cat.jpg" alt="" class="image" />
+        </div>
+        <div class="friend-desc">
+          <p class="name">Oliver</p>
+          <p class="mutual">2 mutual friends</p>
+          <button class="frnd-button">Add Friend</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="friend">
+        <div class="content">
+          <div class="friend-image">
+            <img src="cat.jpg" alt="" class="image" />
+          </div>
+          <div class="friend-desc">
+            <p class="name">Oliver</p>
+            <p class="mutual">2 mutual friends</p>
+            <button class="frnd-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="friend">
+        <div class="content">
+          <div class="friend-image">
+            <img src="cat2.jpg" alt="" class="image" />
+          </div>
+          <div class="friend-desc">
+            <p class="name">Mimi</p>
+            <p class="mutual">3 mutual friends</p>
+            <button class="frnd-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="friend">
+        <div class="content">
+          <div class="friend-image">
+            <img src="dog.jpg" alt="" class="image" />
+          </div>
+          <div class="friend-desc">
+            <p class="name">Rex</p>
+            <p class="mutual">4 mutual friends</p>
+            <button class="frnd-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

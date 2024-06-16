@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 11</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .friend {
+        width: 150px;
+        height: 245px;
+        margin-top: 50px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+      .content {
+        padding: 10px;
+      }
+      .image {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .name {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .mutual {
+        font-size: 12px;
+        font-family: Arial;
+        color: grey;
+      }
+      .mutual-friends {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        align-items: center;
+      }
+      .mutual-profile {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 15px;
+      }
+      .frnd-button {
+        border: none;
+        padding: 7px 15px;
+        background-color: rgba(14, 62, 219, 0.801);
+        color: white;
+        font-family: Arial;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: grid; grid-template-columns: 200px 75px">
+      <div style="background-color: lightblue">200px</div>
+      <div style="background-color: lightpink">75px</div>
+    </div>
+
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin-top: 30px;
+      "
+    >
+      <div style="background-color: lightblue">col1</div>
+      <div style="background-color: lightpink">col2</div>
+      <div style="background-color: lightblue">col3</div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      "
+    >
+      <div style="background-color: lightpink">col1</div>
+      <div style="background-color: lightpink">col2</div>
+      <div style="background-color: lightpink">col3</div>
+      <div style="background-color: lightpink">col4</div>
+      <div style="background-color: lightpink">col1</div>
+      <div style="background-color: lightpink">col2</div>
+      <div style="background-color: lightpink">col3</div>
+      <div style="background-color: lightpink">col4</div>
+    </div>
+
+    <div class="main-content">
+      <div class="friend">
+        <div class="content">
+          <div class="friend-image">
+            <img src="cat.jpg" alt="" class="image" />
+          </div>
+          <div class="friend-desc">
+            <p class="name">Oliver</p>
+            <div class="mutual-friends">
+              <img src="dog.jpg" alt="" class="mutual-profile" />
+              <p class="mutual">2 mutual friends</p>
+            </div>
+            <button class="frnd-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="friend">
+        <div class="content">
+          <div class="friend-image">
+            <img src="cat2.jpg" alt="" class="image" />
+          </div>
+          <div class="friend-desc">
+            <p class="name">Mimi</p>
+            <div class="mutual-friends">
+              <img src="dog.jpg" alt="" class="mutual-profile" />
+              <p class="mutual">3 mutual friends</p>
+            </div>
+            <button class="frnd-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="friend">
+        <div class="content">
+          <div class="friend-image">
+            <img src="dog.jpg" alt="" class="image" />
+          </div>
+          <div class="friend-desc">
+            <p class="name">Rex</p>
+            <div class="mutual-friends">
+              <img src="dog.jpg" alt="" class="mutual-profile" />
+              <p class="mutual">4 mutual friends</p>
+            </div>
+            <button class="frnd-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

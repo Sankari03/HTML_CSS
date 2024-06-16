@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+    <style>
+      .first {
+        padding: 10px;
+      }
+      .para {
+        display: inline-block;
+        color: rgb(148, 50, 234);
+        text-decoration: underline;
+        padding: 5px;
+      }
+      .stretch {
+        border: none;
+        background-color: green;
+        color: white;
+        padding: 5px 15px;
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: padding 0.8s;
+      }
+      .stretch:hover {
+        padding: 20px 30px;
+      }
+      .shadow {
+        border: none;
+        background-color: green;
+        color: white;
+        padding: 8px 16px;
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+      }
+      .shadow:active {
+        margin-top: 3px;
+        margin-left: 3px;
+        box-shadow: none;
+      }
+      .same {
+        border: none;
+        background-color: green;
+        color: white;
+        padding: 8px 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: padding 0.15s, margin 0.15s;
+        margin: 10px;
+      }
+      .same:hover {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="first">Back</button>
+    <!-- or put as link -->
+    <p class="para">1</p>
+    <p class="para">2</p>
+    <p class="para">3</p>
+    <p class="para">4</p>
+    <p class="para">5</p>
+    <button class="first">Next</button>
+    <br />
+    <br />
+    <button class="stretch">Stretch</button>
+    <button class="shadow">Shadow</button>
+    <button class="same">One</button>
+    <button class="same">Two</button>
+    <button class="same">Three</button>
+  </body>
+</html>
